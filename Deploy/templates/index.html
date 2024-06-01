@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Practice Sign Language!</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-image:linear-gradient(to right,#b8bfff,#00d9d9);
+    }
+    .container {
+      text-align: center;
+    
+    }
+    h2{
+      font-size: 40px;
+      font-weight: 600;
+      font-family: "DM Sans", sans-serif;
+      color: white;
+    }
+    p{
+      font-size: 20px;
+      font-weight: 400;
+      color: #6640ff;
+      font-family: "DM Sans", sans-serif;
+
+    }
+    .image-container{
+    border-radius: 5%;
+    overflow: hidden;
+    height: 60vh;
+      width: 43vw;
+    /* border: 2px solid red; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
+    .img{
+      height: 60vh;
+      width: 43vw;
+      /* margin: 0;
+      padding: 0; */
+      /* border: 2px solid purple; */
+    }
+  </style>
+</head>
+<body>
+  <div class="container" >
+    <h2>Welcome to Sign Language <br/>Translator!</h2>
+    
+    <p>Note: please practice with your right hand.</p>
+    <br>
+    <div class="image-container">
+    <img src="{{ url_for('video_feed') }}" class="img">
+
+    </div>
+  </div>
+</body>
+</html>
